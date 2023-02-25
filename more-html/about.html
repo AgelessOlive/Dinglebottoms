@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About the Dinglebottoms</title>
+<link rel="icon" type="image/x-icon" href="../media/images/favicon.ico">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b1b1b1;
+  color: #ffffff;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ff0000;
+  color: white;
+}
+.dark-mode {
+  background-color: #3a3a3a;
+  color: rgb(0, 0, 0);
+
+}
+
+          .div_1{
+          font-family: 'Courier New', monospace;
+          margin: 20px auto 20px auto; 
+          width:400px; 
+          background-color: #474242e3; 
+          padding: 69px 69px;
+          }
+          
+          .div_2{
+          font-family: 'Copperplate', fantasy;
+          color: #6495ED;
+          margin: 20px auto 20px auto; 
+          width:400px; 
+          background-color: blue; 
+          padding: 20px 40px;  
+          margin: 20px auto 20px auto; 
+          width:400px; 
+          background-color: #6a6866; 
+          padding: 20px 40px;
+          }
+
+        button.bn_1{
+        border-radius: 25px;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: #474242e3;
+        color: #000000;
+        padding: 10px;
+        text-transform: uppercase;
+          }
+        button.bn_1:hover{
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        }
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="../dinglebottoms.html">Home</a>
+  <a href="setlist.html">Upcoming songs</a>
+  <a href="mailto:therealdinglebottoms@gmail.com">Contact</a>
+  <a href="about.html">About</a>
+  <a hreg="https://discord.gg/QNqvVRZK9e">Discord</a>
+  <a href="albums.html">Albums</a>
+  
+
+</div>
+
+<div style="padding-left:16px">
+    <script>    
+        function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  
+}                   
+        function reaction1() {        
+          location.replace("https://discord.gg/C8HFTykTTX")
+        } 
+        
+
+(function() {
+  let onpageLoad = localStorage.getItem("theme") || "";
+  let element = document.body;
+  element.classList.add(onpageLoad);
+  document.getElementById("theme").textContent =
+    localStorage.getItem("theme") || "light";
+})();
+
+function themeToggle() {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+
+  let theme = localStorage.getItem("theme");
+  if (theme && theme === "dark-mode") {
+    localStorage.setItem("theme", "");
+  } else {
+    localStorage.setItem("theme", "dark-mode");
+  }
+
+  
+}
+       </script>                       
+        <div class="div_1">  
+            <button class="bn_1" onclick="themeToggle()">Toggle dark mode</button>
+          
+          <h1>About the DingleBottoms </h1> 
+            <h2>Who are we?</h2>
+                <p1>We are a rap group from northern oregon that consists of 5 people who all decided to write very bad music but we managed to pull off a very small audience</p1>
+            <h2>Members of the DingleBottoms</h2>
+            <h3>The Founder and first rapper</h3>
+            <p2>Lil' Fishstick</p2>
+            <h3>Second rapper</h3>
+                <p3>N.Q.D.3.B</p3>
+            <h3>Third rapper</h3>
+                <p4>Xela <33</p4>
+            <h3>Publisher</h3>
+                <p5>Slimeydupes117</p3>
+            <h3>Forth rapper and owner of the Hotdog hotline podcast</h3>
+                <p6>The hotdog hotline</p6> 
+                
+                
+          
+          
+        </form>
+            <h1>Dinglebottom monkey</h1>
+            <img src="../media/images/db_logo.jpg" />
+        </div>
+       <!--
+        unused code goes down here in case i need to put it back in
+        
+        <div class="div_2">
+            
+          <h1>Our stuff </h1>
+          <a href=more-html/setlist.html>The song list</a>
+          
+
+        </div>
+    -->
+
+
+    <!--
+    Member identification
+
+    Lil fishstick
+    lane 
+
+    Slimeydupes117
+    oliver
+
+    N.Q.D.3.B
+    nathan
+
+    Xela <33
+    xela
+
+    The hotdog hotline
+    quinn
+
+
+    -->
+
+
+
+
+
+<!--
+Display theme mode issue 
+
+document.getElementById("theme").textContent = localStorage.getItem("theme");
+
+-->
+          
+          
+
+</div>
+
+</body>
+</html>
