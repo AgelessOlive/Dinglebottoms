@@ -10,8 +10,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #b1b1b1;
-  color: #ffffff;
+  background-color: #3a3a3a;
+  color: rgb(0, 0, 0);
 }
 
 .topnav {
@@ -37,11 +37,7 @@ body {
   background-color: #ff0000;
   color: white;
 }
-.dark-mode {
-  background-color: #3a3a3a;
-  color: rgb(0, 0, 0);
 
-}
 
           .div_1{
           font-family: 'Courier New', monospace;
@@ -64,25 +60,14 @@ body {
           padding: 20px 40px;
           }
 
-        button.bn_1{
-        border-radius: 25px;
-        border: solid rgb(0, 0, 0) 2px;
-        background-color: #474242e3;
-        color: #000000;
-        padding: 10px;
-        text-transform: uppercase;
-          }
-        button.bn_1:hover{
-        background-color: #000000;
-        color: rgb(255, 255, 255);
-        }
+       
 </style>
 </head>
 <body>
 
 <div class="topnav">
   <a class="active" href="../index.html">Home</a>
-  <a href="setlist.html">Upcoming songs</a>
+  <a href="https://www.youtube.com/@thedinglebottoms">Our Youtube channel</a>
   <a href="mailto:therealdinglebottoms@gmail.com">Contact</a>
   <a href="about.html">About</a>
   <a href="https://discord.gg/B82UUs2fck">Discord server</a>
@@ -95,7 +80,7 @@ body {
     <script>    
         function myFunction() {
   var element = document.body;
-  element.classList.toggle("dark-mode");
+
   
 }                   
         function reaction1() {        
@@ -103,30 +88,10 @@ body {
         } 
         
 
-(function() {
-  let onpageLoad = localStorage.getItem("theme") || "";
-  let element = document.body;
-  element.classList.add(onpageLoad);
-  document.getElementById("theme").textContent =
-    localStorage.getItem("theme") || "light";
-})();
 
-function themeToggle() {
-  let element = document.body;
-  element.classList.toggle("dark-mode");
-
-  let theme = localStorage.getItem("theme");
-  if (theme && theme === "dark-mode") {
-    localStorage.setItem("theme", "");
-  } else {
-    localStorage.setItem("theme", "dark-mode");
-  }
-
-  
-}
        </script>                       
         <div class="div_1">  
-            <button class="bn_1" onclick="themeToggle()">Toggle dark mode</button>
+           
           
           <h1>About the DingleBottoms </h1> 
             <h2>Who are we?</h2>
